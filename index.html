@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real Estate Website</title>
+
+    <!-- Custome Css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Media-Query -->
+    <link rel="stylesheet" href="media-query.css" />
+
+    <!-- bootstrap-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Fontawesome-icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Images/logo.png" alt="logo" class="w-50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#project"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#commercial">Commercial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn bg-dark text-white px-2 text-nowrap rounded-3 letter-spacing"
+                href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousal -->
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner" id="home">
+        <div class="carousel-item active">
+          <img
+            src="Images/slider3.jpg"
+            class="d-block w-100 slider-height"
+            alt="..."
+          />
+          <div class="carousel-caption carousel1">
+            <p>1 / 3</p>
+            <h5>Trident Embassy Reso</h5>
+            <p class="line_height">GH-05B, Sector 1, Noida Extension</p>
+            <p>
+              <a href="#" class="btn btn-light btn-lg mt-3 rounded-3 more-btn"
+                >Discover More</a
+              >
+            </p>
+
+            <div class="mt-5 d-flex input_box">
+              <input
+                type="text"
+                class="form-control search w-50 rounded-3"
+                id="floatingInput"
+                placeholder="Search..."
+              />
+
+              <button
+                class="btn btn-light btn-sm justify-content-md-end mx-4 px-3 rounded-3"
+              >
+                <i class="fa-solid fa-magnifying-glass px-1"></i>Search
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="Images/slider1.jpg"
+            class="d-block w-100 slider-height"
+            alt="..."
+          />
+
+          <div class="carousel-caption carousel1">
+            <p>2 / 3</p>
+            <h5>Lord Krishna Medlley</h5>
+            <p>At Yamuna Expressway, Greater Noida</p>
+            <p>
+              <a href="#" class="btn btn-light btn-lg mt-3 rounded-3 more-btn"
+                >Discover More</a
+              >
+            </p>
+
+            <div class="mt-5 d-flex input_box">
+              <input
+                type="text"
+                class="form-control search w-50 rounded-0"
+                id="floatingInput"
+                placeholder="Search..."
+              />
+
+              <button
+                class="btn btn-light btn-sm justify-content-md-end mx-4 px-3 rounded-3"
+              >
+                <i class="fa-solid fa-magnifying-glass px-1"></i>Search
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="Images/slider2 (2).jpg"
+            class="d-block w-100 slider-height"
+            alt="..."
+          />
+
+          <div class="carousel-caption carousel1">
+            <p>3 / 3</p>
+            <h5>Trident Embassy Reso</h5>
+            <p>GH-05B, Sector 1, Noida Extension</p>
+            <p>
+              <a href="#" class="btn btn-light btn-lg mt-3 rounded-3 more-btn"
+                >Discover More</a
+              >
+            </p>
+
+            <div class="mt-5 d-flex input_box">
+              <input
+                type="text"
+                class="form-control search w-50 rounded-3"
+                id="floatingInput"
+                placeholder="Search..."
+              />
+
+              <button
+                class="btn btn-light btn-sm justify-content-md-end mx-4 px-3 rounded-3"
+              >
+                <i class="fa-solid fa-magnifying-glass px-1"></i>Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="icon">&larr;</span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="icon">&rarr;</span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div
+        class="col-md-4 z-1 position-absolute card-bottom card mb-3 card-color rounded-0"
+        style="background: #000"
+      >
+        <div class="row align-items-center m-0">
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title text-light">Card title</h5>
+              <p class="card-text text-light">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">
+                <small class="text-white">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <img
+              src="Images/img2.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Residence -->
+
+    <section class="container">
+      <p></p>
+      <div class="d-flex align-items-center mt-5">
+        <h2 class="fw-bold">Featured Project</h2>
+        <h6 class="ms-auto fw-bold">
+          Explore All <span class="arrow-icon">&rarr;</span>
+        </h6>
+      </div>
+
+      <!-- Cards -->
+
+      <div class="container-cards" style="margin-top: -50px">
+        <div class="card__container">
+          <article class="card__article">
+            <img src="Images/project-img1.jpg" alt="" class="card__img" />
+
+            <div class="card__data">
+              <h2 class="card__title">The Resident Tower</h2>
+              <span class="card__description">Sector 150, Noida </span>
+              <span class="card__rate"> 1.59Cr - 2.37Cr </span>
+              <a href="#" class="card__button">Read More</a>
+              <hr class="text-white" />
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="Images/project2.jpg" alt="" class="card__img" />
+
+            <div class="card__data">
+              <h2 class="card__title">Eldeco Live Greens Phase 1</h2>
+              <span class="card__description">Sector 150, Noida </span>
+              <span class="card__rate"> 67.65Lac - 83.54Lac </span>
+              <a href="#" class="card__button">Read More</a>
+              <hr class="text-white" />
+            </div>
+          </article>
+
+          <article class="card__article">
+            <img src="Images/project3.jpg" alt="" class="card__img" />
+
+            <div class="card__data">
+              <h2 class="card__title">Godrej Nurture</h2>
+              <span class="card__description">Sector 150, Noida </span>
+              <span class="card__rate"> 70.00Lac - 1.82Cr </span>
+              <a href="#" class="card__button">Read More</a>
+              <hr class="text-white" />
+            </div>
+          </article>
+        </div>
+      </div>
+      <!-- end -->
+    </section>
+
+    <!-- Find Your Neighborhood -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-start">
+          <h2 class="fw-bold">Find Your Neighborhood</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container containers">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="mycard mt-5">
+            <div class="cimg">
+              <img src="Images/Advant.jpg" alt="" />
+            </div>
+            <div class="cdetail">
+              <h2>Noida</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cumque, repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="mycard mt-5 mb-sm-4">
+            <div class="cimg">
+              <img src="Images/raddison.png" alt="" />
+            </div>
+            <div class="cdetail">
+              <h2>Greater Noida</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cumque, repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="mycard mt-5 mb-sm-4">
+            <div class="cimg">
+              <img src="Images/highwayimage.png" alt="" />
+            </div>
+            <div class="cdetail">
+              <h2>Noida Expressway</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cumque, repellat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Resident Tower -->
+
+    <section
+      class="about section-padding"
+      style="margin-top: 0px"
+      id="commercial"
+    >
+      <div class="text-center pb-5">
+        <h2>The Resident Tower</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="d-flex">
+              <div class="about-img mx-2">
+                <img
+                  src="Images/img2.jpg"
+                  alt="about-img"
+                  class="img-fluid h-100 mt-4"
+                />
+              </div>
+
+              <div class="about-img">
+                <img
+                  src="Images/part2img.jpg"
+                  alt="about-img"
+                  class="img-fluid h-75"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-7 col-md-12 col-12 ps-lg-5 mt-md-5"
+            style="margin-top: 40px"
+          >
+            <div class="about-text">
+              <h2 class="fw-bolder">
+                Comfort is Our <br />
+                Top Priority for Your
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                minus harum non atque delectus numquam accusantium deserunt?
+                Quia vel doloribus voluptatem deleniti minima molestias,
+                obcaecati itaque aut delectus. Placeat minima libero earum
+                fugiat ea. Quo facere quam veritatis, excepturi modi consectetur
+                repudiandae iste similique vero esse tempora, autem voluptates
+                deserunt saepe hic iure minus incidunt quis nam numquam magnam!
+                Odit consequatur officiis atque quo iste. Recusandae quia
+                incidunt obcaecati ratione natus dicta sunt magni vitae libero
+                velit ut quaerat sequi sit placeat quae odit soluta perferendis
+                voluptate et itaque cumque consequuntur, optio ab facere!
+                Corporis laboriosam dolore numquam assumenda officiis.
+              </p>
+
+              <a href="#" class="btn text-white bg-dark px-3 rounded-3"
+                >See More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs Section -->
+
+    <section class="container" id="blogs">
+      <p class="fw-bold">What’s New Trending</p>
+      <div class="d-flex">
+        <h2 class="fw-bold">Latest Blog & Posts</h2>
+        <button class="btn text-white bg-dark px-4 btn-md ms-auto rounded-3">
+          See All Blogs
+        </button>
+      </div>
+
+      <!-- Important -->
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+        <div class="col">
+          <div class="card border-0 rounded-5">
+            <img
+              src="Images/project-img1.jpg"
+              alt="image"
+              class="card-img-top rounded-5"
+            />
+            <div class="card-body card-one">
+              <p class="card-text text-muted fs-5">The Resident Tower</p>
+
+              <div class="d-flex mt-3">
+                <p class="text-muted card-text">
+                  <i class="fa fa-bed"></i> 3 / 4 BHK
+                </p>
+
+                <p class="text-muted card-text mx-3">
+                  <i class="fa fa-compass"></i> Area: 2450-3650 Sq.Ft.
+                </p>
+
+                <!-- <p class=" text-muted card-text">
+                  <i class="fa fa-location"></i> Sector 150, Noida 
+                </p> -->
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-2 rounded-3">
+                  Read More
+                </button>
+                <h5 class="pt-2 mx-2">1.59Cr-2.37Cr</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="Images/project-img1.jpg"
+              alt="image"
+              class="card-img-top rounded-5"
+            />
+            <div class="card-body card-one">
+              <p class="card-text text-muted"> The Resident Tower</p>
+
+              <div class="d-flex justify-content-center mt-3 ">
+                <p class=" text-muted card-text ">
+                  <i class="fa fa-bed "></i> 3 / 4 <br> BHK
+                </p>
+
+                <p class="mx-3 text-muted card-text">
+                  <i class="fa fa-compass"></i> Area: 2450-3650 <br>Sq.Ft.
+                </p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-2 rounded-0">
+                  Book Now
+                </button>
+                <h5 class="pt-2 mx-2"> 1.59Cr-2.37Cr</h5>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col">
+          <div class="card border-0 rounded-5">
+            <img
+              src="Images/project2.jpg"
+              alt="image"
+              class="card-img-top rounded-5"
+            />
+            <div class="card-body card-two">
+              <p class="card-text text-muted fs-5">
+                Eldeco Live Greens Phase 1
+              </p>
+
+              <div class="d-flex mt-3">
+                <p class="text-muted card-text">
+                  <i class="fa fa-bed"></i> 2 / 3 BHK
+                </p>
+
+                <p class="text-muted card-text mx-3">
+                  <i class="fa fa-compass"></i> Area: 1137 - 1404 Sq.Ft.
+                </p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-2 rounded-3">
+                  Read More
+                </button>
+                <h5 class="pt-2 mx-2">67.65Lac-83.54Lac</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 rounded-5">
+            <img
+              src="Images/project3.jpg"
+              alt="image"
+              class="card-img-top rounded-5"
+            />
+            <div class="card-body card-three">
+              <p class="card-text text-muted fs-5">Godrej Nurture</p>
+
+              <div class="d-flex mt-3">
+                <p class="text-muted card-text">
+                  <i class="fa fa-bed"></i> 2 / 4 BHK
+                </p>
+
+                <p class="text-muted card-text mx-3">
+                  <i class="fa fa-compass"></i>Area: 1250 - 3050 Sq.Ft.
+                </p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-2 rounded-3">
+                  Read More
+                </button>
+                <h5 class="pt-2 mx-2">70.00 Lac-1.82Cr</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="Images/project-img1.jpg"
+              alt="image"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">18 Jun</p>
+              <p class="card-text text-muted">
+                Trident Embassy Reso Luxury Homes in Greater Noida West
+              </p>
+
+              <button
+                class="btn text-primary px-4 bg-lg rounded-0"
+                style="background-color: #d4e9ff"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="Images/project2.jpg"
+              alt="image"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">24 May</p>
+              <p class="card-text text-muted">
+                Eldeco Live Greens Luxury Homes Sector 150 Noida
+              </p>
+
+              <button
+                class="btn text-primary px-4 bg-lg rounded-0"
+                style="background-color: #d4e9ff"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="Images/project3.jpg"
+              alt="image"
+              class="card-img-top rounded-0"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">24 May</p>
+              <p class="card-text text-muted">
+                ACE Ready to Move in Resort Towers Sector 150 Noida
+              </p>
+
+              <button
+                class="btn text-primary px-4 bg-lg rounded-0"
+                style="background-color: #d4e9ff"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- logo -->
+
+    <div class="bg-dark" style="margin-top: 100px">
+      <div class="container pt-5">
+        <div class="d-flex">
+          <h2 class="text-light"></h2>
+
+          <div class="ms-auto">
+            <button class="btn btn-md text-light">
+              <!-- <span class="arrow-icon mx-2">&larr;</span> -->
+            </button>
+            <button class="btn btn-md text-light">
+              <!-- <span class="arrow-icon mx-2">&rarr;</span> -->
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- start -->
+      <div class="container" style="margin-top: 30px">
+        <div class="row">
+          <div class="col-md-3 text-center mb-5 Godrej-logo">
+            <img src="Images/gaur.logo.png" class="w-75" />
+          </div>
+          <div class="col-md-3 text-center mb-5 eldeco-logo">
+            <img src="Images/eldeco.jpg" class="w-75" />
+          </div>
+          <div class="col-md-3 text-center mb-5 tata-logo">
+            <img src="Images/Godrej-logo.jpg" class="w-75" />
+          </div>
+          <div class="col-md-3 text-center mb-5 Godrej-logo">
+            <img src="Images/tata.jpg" class="w-75" />
+          </div>
+        </div>
+      </div>
+
+      <!-- end -->
+    </div>
+
+    <!-- Qna Section -->
+
+    <section class="about section-padding" style="margin-top: 40px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12 mt-md-3">
+            <div class="about-text">
+              <p class="fw-bold">Questions</p>
+              <h2 class="fw-bold">Frequently Asked <br />Questions</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                minus harum non atque delectus numquam accusantium deserunt?
+                Quia vel doloribus voluptatem deleniti minima molestias,
+                obcaecati itaque aut delectus. Placeat minima libero earum
+                fugiat ea.
+              </p>
+
+              <a href="#" class="btn text-white bg-dark px-3 rounded-3"
+                >See More</a
+              >
+            </div>
+          </div>
+
+          <!-- Accordian -->
+          <div class="accordion col-lg-7 mt-3" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark bg-footer" style="margin-top: 80px" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-light">About Us</h5>
+            <p class="text-light">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis aliquam quisquam quia reiciendis sequi aliquid
+              assumenda? Quia blanditiis suscipit mollitia?
+            </p>
+            <p class="text-light"><i class="fa fa-location"></i> 123 456 897</p>
+            <p class="text-light"><i class="fa fa-phone"> +91-7835918918</i></p>
+            <p class="text-light">
+              <i class="fa fa-envelope"></i> info@proptiqq.com
+            </p>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="text-light">Quick Links</h5>
+            <ul class="Quick-padding">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="text-light">Stay Connected</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+
+              <li>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+            </ul>
+          </div>
+
+          <hr />
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="text-center text-light">
+                2024 © All right served by
+                <a class="text-light" href="">proptiqq</a> & site designed by
+                <a class="text-light" href="">Infotiqq</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
